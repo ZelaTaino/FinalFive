@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
+import { Micromerchant } from '../../models/micromerchant';
 
 /**
  * Generated class for the ProfileModalPage page.
@@ -14,14 +15,20 @@ import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angul
 })
 export class ProfileModalPage {
 
+micromerchant = {} as Micromerchant;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, public viewCtrl: ViewController) {}
 
   closeModal(){
   	this.viewCtrl.dismiss();
   }
 
-  createProfile(){
-  	
+  createProfile(micromerchant:Micromerchant){
+
+   let data ={ name : micromerchant.name , city : micromerchant.city , industry : micromerchant.industry
+
+   }
+  	console.log(data);
   }
 
   ionViewDidLoad() {
