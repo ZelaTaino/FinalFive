@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
+import { MicroMerchantPage } from '../../pages/micro-merchant/micro-merchant';
+
 /**
  * Generated class for the MerchantPage page.
  *
@@ -19,6 +21,10 @@ export class Merchant {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Merchant');
+  }
+
+  nextScreen() {
+    this.navCtrl.setRoot(MicroMerchantPage);
   }
 
 }

@@ -1,3 +1,18 @@
 page-micro-merchant {
 
+#icon{
+		color: white;
+	}
+	.title{
+		background-color: #C41919;
+	}
+
+	@font-face {
+		font-family: Avenir;
+	}
+
+	body, button, h3, ion-item, ion-title {
+		font-family: 'Avenir' !important;
+	}
+
 }

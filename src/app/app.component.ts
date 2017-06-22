@@ -4,9 +4,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
 import { Merchant } from '../pages/merchant/merchant';
 import { Dashboard } from '../pages/dashboard/dashboard';
+
 
 @Component({
   templateUrl: 'app.html'
@@ -24,7 +24,6 @@ export class MyApp {
     this.pages = [
       { title: 'Dashboard', component: Dashboard },
       { title: 'Merchants', component: Merchant},
-      { title: 'Lenders', component: ListPage },
       { title: 'Logout', component: HomePage }
     ];
 
