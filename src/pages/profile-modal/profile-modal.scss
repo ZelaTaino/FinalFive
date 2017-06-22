@@ -1,15 +1,4 @@
-page-home {
-	.scroll-content {
-		background-image: url('../assets/img/login.png');
-		background-size: 100%;
-		width: 100%;
-	}
-
-	.login {
-		margin-top: 80%;
-		opacity: 0.3;
-	}
-
+page-profile-modal {
 	.button {
 		background-color: #C41919;
 	}
@@ -19,6 +8,13 @@ page-home {
 	.button:focus{
 		background-color: #E73F3F;
 	}
+	#icon{
+		color: white;
+	}
+	.title{
+		background-color: #C41919;
+	}
+
 	@font-face {
 		font-family: Avenir;
 	}

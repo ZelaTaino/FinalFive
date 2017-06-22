@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
+import { ProfileModalPage } from '../../pages/profile-modal/profile-modal';
 
 /**
  * Generated class for the MerchantPage page.
@@ -14,7 +15,12 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class Merchant {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public modalCtrl: ModalController) {
+  }
+
+  openModal() {
+  	let myModal = this.modalCtrl.create(ProfileModalPage);
+  	myModal.present();
   }
 
   ionViewDidLoad() {

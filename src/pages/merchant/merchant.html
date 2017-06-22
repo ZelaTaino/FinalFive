@@ -9,11 +9,14 @@
     <button ion-button menuToggle>
       <ion-icon id="icon" name="menu"></ion-icon>
     </button>
-
     <ion-title class="title" >
-      <p style='color: white'>MERCHNATS</p>
+      <p style='color: white'>MERCHANTS</p>
     </ion-title>
-
+    <ion-buttons end>
+        <button style="color:white;" ion-button icon-only (click)="openModal()">
+            <ion-icon color="white" name="add"></ion-icon>
+        </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 

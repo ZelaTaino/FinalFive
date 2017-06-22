@@ -1,0 +1,68 @@
+<!--
+  Generated template for the ProfileModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>
+    	<p style='color: white'>SETUP PROFILE</p>
+    </ion-title>
+    <ion-buttons end>
+        <button style="color:white;" ion-button icon-only (click)="closeModal()">
+             <ion-icon name="close"></ion-icon>
+        </button>
+  	</ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<ion-list>
+    		<ion-label>Background</ion-label>
+		<ion-item>
+    		<ion-input placeholder="Name"></ion-input>
+  		</ion-item>
+  		<ion-item>
+  			<ion-label>
+  				<p style="color:#C41919;">
+  					Date of Birth	
+  				</p>
+  			</ion-label>
+  			<ion-datetime displayFormat="MM/DD/YYYY" pickerFormat="YYYY-MM-DD" [(ngModel)]="myDate"></ion-datetime>
+		</ion-item>
+		<ion-item>
+    		<ion-input placeholder="(555)555-555"></ion-input>
+  		</ion-item>
+  		<ion-item>
+    		<ion-input placeholder="ID#"></ion-input>
+  		</ion-item>
+	</ion-list>
+	<ion-list>
+		<ion-label>Address</ion-label>
+		<ion-item>
+    		<ion-input placeholder="Street"></ion-input>
+  		</ion-item>
+  		<ion-item>
+    		<ion-input placeholder="City"></ion-input>
+  		</ion-item>
+  		<ion-item>
+    		<ion-input placeholder="Postal Code"></ion-input>
+  		</ion-item>
+  		<ion-item>
+    		<ion-input placeholder="Country"></ion-input>
+  		</ion-item>
+	</ion-list>
+	<ion-list>
+		<ion-label>Business</ion-label>
+		<ion-item>
+    		<ion-input placeholder="Business Name"></ion-input>
+  		</ion-item>
+		<ion-item>
+    		<ion-input placeholder="Industry"></ion-input>
+  		</ion-item>
+	</ion-list>
+	<button ion-button full (click)="createProfile()">DONE</button>
+</ion-content>
