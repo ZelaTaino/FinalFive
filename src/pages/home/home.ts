@@ -27,7 +27,7 @@ user = {} as User;
         const result = this.afAuth.auth.signInWithEmailAndPassword(user.email,user.password);
         if(result)
         {
-        this.navCtrl.push(Dashboard);
+        this.navCtrl.setRoot(Dashboard);
     }}
     catch(e)
     {
