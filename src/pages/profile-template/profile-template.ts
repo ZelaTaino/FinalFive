@@ -14,11 +14,22 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ProfileTemplatePage {
 
+	public name: string;
+	public ind: string;
+	public city: string;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ProfileTemplatePage');
+
+      let Name = this.navParams.get('name');
+      let Industry = this.navParams.get('industry');
+      let City = this.navParams.get('city');
+      this.name = Name;
+      this.ind=Industry;
+      this.city=City;
   }
 
 }

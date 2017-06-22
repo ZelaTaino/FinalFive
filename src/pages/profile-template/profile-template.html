@@ -5,25 +5,24 @@
   Ionic pages and navigation.
 -->
 <ion-header>
-
   <ion-navbar>
     <button ion-button menuToggle>
       <ion-icon id="icon" name="menu"></ion-icon>
     </button>
 
     <ion-title class="title" >
-      <p style='color: white'>TEMP</p>
+      <p style='color: white'>Temp</p>
     </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
 	<img src="../../assets/img/empty_profile.png">
+
 	<div class="test">
-		<h3 class="text">Name</h3>
-		<p class="text">Industy</p>
-		<p class="text">City</p>
+		<h3 class="text" >{{ name }}</h3>
+		<p class="text">{{ ind }}</p>
+		<p class="text">{{ city }}</p>
 	</div>
 </ion-content>

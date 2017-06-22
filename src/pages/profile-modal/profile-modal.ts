@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import { Micromerchant } from '../../models/micromerchant';
+import { ProfileTemplatePage } from '../../pages/profile-template/profile-template';
 
 /**
  * Generated class for the ProfileModalPage page.
@@ -28,7 +29,7 @@ micromerchant = {} as Micromerchant;
    let data ={ name : micromerchant.name , city : micromerchant.city , industry : micromerchant.industry
 
    }
-  	console.log(data);
+  	  this.navCtrl.setRoot(ProfileTemplatePage,data);
   }
 
   ionViewDidLoad() {
