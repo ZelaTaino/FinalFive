@@ -23,7 +23,7 @@
 	<ion-list>
     		<ion-label>Background</ion-label>
 		<ion-item>
-    		<ion-input placeholder="Name"></ion-input>
+    		<ion-input placeholder="Name" [(ngModel)]="micromerchant.name"></ion-input>
   		</ion-item>
   		<ion-item>
   			<ion-label>
@@ -46,7 +46,7 @@
     		<ion-input placeholder="Street"></ion-input>
   		</ion-item>
   		<ion-item>
-    		<ion-input placeholder="City"></ion-input>
+    		<ion-input placeholder="City" [(ngModel)]="micromerchant.city"></ion-input>
   		</ion-item>
   		<ion-item>
     		<ion-input placeholder="Postal Code"></ion-input>
@@ -61,8 +61,11 @@
     		<ion-input placeholder="Business Name"></ion-input>
   		</ion-item>
 		<ion-item>
-    		<ion-input placeholder="Industry"></ion-input>
+    		<ion-input placeholder="Industry" [(ngModel)]="micromerchant.industry" ></ion-input>
   		</ion-item>
+      <ion-item>
+        <ion-input placeholder="Amount of Loan"></ion-input>
+      </ion-item>
 	</ion-list>
-	<button ion-button full (click)="createProfile()">DONE</button>
+	<button ion-button full (click)="createProfile(micromerchant)">DONE</button>
 </ion-content>
