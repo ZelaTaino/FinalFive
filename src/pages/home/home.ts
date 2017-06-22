@@ -3,7 +3,7 @@ import { NavController } from 'ionic-angular';
 
 import { User } from '../../models/user';
 
-import { ListPage } from '../../pages/list/list';
+import { Dashboard } from '../../pages/dashboard/dashboard';
 
 import { AngularFireAuth } from 'angularfire2/auth';
 
@@ -27,7 +27,7 @@ user = {} as User;
         const result = this.afAuth.auth.signInWithEmailAndPassword(user.email,user.password);
         if(result)
         {
-        this.navCtrl.push(ListPage);
+        this.navCtrl.push(Dashboard);
     }}
     catch(e)
     {
