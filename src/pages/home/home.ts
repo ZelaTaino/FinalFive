@@ -28,7 +28,8 @@ user = {} as User;
         if(result)
         {
         this.navCtrl.setRoot(Dashboard);
-    }}
+    }
+    }
     catch(e)
     {
       console.error(e);

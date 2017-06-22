@@ -8,6 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { Dashboard } from '../pages/dashboard/dashboard';
 import { Merchant } from '../pages/merchant/merchant';
 import { ProfileModalPage } from '../pages/profile-modal/profile-modal';
+import { MicroMerchantPage } from '../pages/micro-merchant/micro-merchant';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -34,7 +35,8 @@ export const firebaseConfig = {
     ListPage,
     Dashboard,
     Merchant,
-    ProfileModalPage
+    ProfileModalPage,
+    MicroMerchantPage
     
   ],
   imports: [
@@ -51,7 +53,8 @@ export const firebaseConfig = {
     ListPage,
     Dashboard,
     Merchant,
-    ProfileModalPage
+    ProfileModalPage,
+    MicroMerchantPage
   ],
   providers: [
     StatusBar,
