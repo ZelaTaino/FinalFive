@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 
 import { User } from '../../models/user';
 
+import { ListPage } from '../../pages/list/list';
+
 import { AngularFireAuth } from 'angularfire2/auth';
 
 @Component({
@@ -23,8 +25,10 @@ user = {} as User;
      try
      {
         const result = this.afAuth.auth.signInWithEmailAndPassword(user.email,user.password);
-        console.log(result);
-    }
+        if(result)
+        {
+        this.navCtrl.push(ListPage);
+    }}
     catch(e)
     {
       console.error(e);
