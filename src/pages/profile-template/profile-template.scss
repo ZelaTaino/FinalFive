@@ -1,0 +1,31 @@
+page-profile-template {
+	img{
+		position: absolute;
+	}
+	.scroll-content {
+		padding: 0 !important;
+	}
+	#icon{
+		color: white;
+	}
+	.title{
+		background-color: #C41919;
+	}
+	.test {
+		position: fixed;
+		margin-top:114pt;
+		margin-left: 117pt;
+	}
+	.text{
+		font-family: Avenir;
+		color: white;
+		text-align: center;
+	}
+	h3{
+		margin: 1pt;
+		font-size: 20pt;
+	}
+	p{
+		margin: 0 auto 1pt;
+	}
+}
