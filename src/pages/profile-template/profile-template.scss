@@ -12,9 +12,9 @@ page-profile-template {
 		background-color: #C41919;
 	}
 	.test {
-		position: fixed;
+		position: relative;
 		margin-top:114pt;
-		margin-left: 117pt;
+		margin-left: 8pt;
 	}
 	.text{
 		font-family: Avenir;
@@ -22,10 +22,10 @@ page-profile-template {
 		text-align: center;
 	}
 	h3{
-		margin: 1pt;
+		margin: 0pt;
 		font-size: 20pt;
 	}
 	p{
-		margin: 0 auto 1pt;
+		margin: 0 auto -1pt;
 	}
 }
