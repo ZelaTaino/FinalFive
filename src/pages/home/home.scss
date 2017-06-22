@@ -13,5 +13,11 @@ page-home {
 	.button {
 		background-color: #C41919;
 	}
+	.button:active{
+		background-color: #C41919;
+	}
+	.button:focus{
+		background-color: #C41919;
+	}
 
 }
