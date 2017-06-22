@@ -6,6 +6,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { Dashboard } from '../pages/dashboard/dashboard';
+import { Merchant } from '../pages/merchant/merchant';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -30,7 +31,8 @@ export const firebaseConfig = {
     MyApp,
     HomePage,
     ListPage,
-    Dashboard
+    Dashboard,
+    Merchant
     
   ],
   imports: [
@@ -45,7 +47,8 @@ export const firebaseConfig = {
     MyApp,
     HomePage,
     ListPage,
-    Dashboard
+    Dashboard,
+    Merchant
   ],
   providers: [
     StatusBar,
